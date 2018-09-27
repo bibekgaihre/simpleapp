@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="/css/main.css" />
+    <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" media="screen,projection" />
+    <script src="/js/main.js"></script>
+</head>
+<body>
+    
+                <nav class="navbar fixed-top navbar-light bg-light">
+                <a class="navbar-brand" href="#" style="font-family: 'Antic', sans-serif; margin: 10px; font-size: 30px;">Home</a>
+                </nav>
+                <div class="container" style="margin-top:10%">
+                    <div class="row"></div>
+                    <div class="row">
+                        <div class="col" style="background:#f8f9fa">
+                            <div class="row">
+                                    <p class="text-left" style="font-family: 'Antic', sans-serif; margin: 10px; font-size: 30px;">Register</p>
+                            </div>
+                            <div class="row">
+                                <form action="/register" method="POST">
+                                                <div class="form-row" style="margin-left: 7px">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputtext4">Full Name</label>
+                                                                <input type="text" name="fullname" class="form-control" id="inputtext4" placeholder="Enter Full Name" required>
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                    <label for="inputtext5">Username</label>
+                                                                    <input type="text" name="username" class="form-control" id="inputtext5" placeholder="Enter desired Username" required>
+                                                            </div>
+                                                </div> 
+                                                <div class="row"></div>
+                                                <div class="form-row" style="margin-left: 7px">
+                                                        <div class="form-group col-md-8">
+                                                                <label for="inputEmail4">Email</label>
+                                                                <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                                                              </div>
+                                                </div>
+                                                <div class="form-row" style="margin-left: 7px">
+                                                        <div class="form-group col-md-8">
+                                                                <label for="inputPassword4">Password</label>
+                                                                <input type="password" name="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+                                                              </div>
+                                                </div>
+                                                <div class="form-row" style="margin-left: 7px">
+                                                        <div class="form-group col-md-8">
+                                                                <label for="inputPhone4">Phone</label>
+                                                                <input type="text" name="phone" class="form-control" id="inputPhone4" placeholder="Phone Number" required>
+                                                              </div>
+                                                </div>
+                                                <div class="form-row" style="margin-left: 7px">
+                                                        <button type="submit" class="btn btn-dark btn-lg">Register</button>
+                                                </div>
+                                                <div class="row" style="height: 40px;color: orangered"><%=notification %></div>
+                                                        
+                                                
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col" style="background:#f8f9fa">
+                                <div class="row">
+                                        <p class="text-left" style="font-family: 'Antic', sans-serif; margin: 10px; font-size: 30px;">Login</p>
+                                </div>
+                                <div class="row">
+                                    <form action="/login" method="POST">
+                                            <div class="form-row" style="margin-left: 7px">
+                                                    <div class="form-group col-md-6">
+                                                            <label for="inputtext5">Username</label>
+                                                            <input type="text" name="username" class="form-control" id="inputtext5" placeholder="Username">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                            <label for="inputpassword5">Password</label>
+                                                            <input type="password" name="password" class="form-control" id="inputpassword5" placeholder="Password">
+                                                    </div>
+                                                    <div class="form-row" style="margin-left: 7px">
+                                                            <button type="submit" class="btn btn-dark btn-lg">Login</button>
+                                                    </div>
+                                                    <div class="row" style="height: 40px;color:orangered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=notificationlogin %></div>
+                                        </div> 
+                                    </form>
+                                </div>
+                        </div>
+                      </div>
+                </div>
+
+
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+</body>
+</html>
